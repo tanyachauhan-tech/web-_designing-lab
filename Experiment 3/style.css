@@ -1,0 +1,112 @@
+:root {
+    --beige-bg-dark: #f5f2eb;
+    --beige-bg-medium: #e6dfd5;
+    --beige-card: #fdfbf7;
+    --beige-accent: #8c7a6b;   
+    --beige-border: #dcd4c7;
+    --text-color: #4a433d;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, var(--beige-bg-dark) 0%, var(--beige-bg-medium) 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    color: var(--text-color);
+}
+.todo-card {
+    background-color: var(--beige-card);
+    border: 1px solid var(--beige-border);
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(140, 122, 107, 0.1);
+    width: 100%;
+    max-width: 520px;
+    overflow: hidden;
+}
+.header-subtitle {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: var(--beige-accent);
+}
+.form-control {
+    background-color: #f7f5f0;
+    border: 1px solid var(--beige-border);
+    color: var(--text-color);
+}
+.form-control:focus {
+    border-color: var(--beige-accent);
+    background-color: #fff;
+    box-shadow: 0 0 0 0.2rem rgba(140, 122, 107, 0.15);
+}
+.btn-add {
+    background-color: var(--beige-accent);
+    color: #fff;
+    border: none;
+}
+.btn-add:hover {
+    background-color: #726253;
+    color: #fff;
+}
+.filter-container {
+    background-color: #f2ede4;
+}
+.nav-pills .nav-link {
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 0.85rem;
+    border-radius: 6px;
+    padding: 6px 12px;
+}
+.nav-pills .nav-link.active {
+    background-color: var(--beige-card);
+    color: var(--beige-accent);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+.todo-item {
+    background-color: var(--beige-card);
+    border: 1px solid var(--beige-border);
+    border-radius: 8px !important;
+    margin-bottom: 8px;
+    transition: all 0.2s ease;
+}
+.todo-item:hover {
+    background-color: #f4f0e8;
+}
+.todo-item.completed {
+    background-color: #f0ece3;
+    opacity: 0.75;
+}
+.todo-item.completed .todo-text {
+    text-decoration: line-through;
+    color: #9c9183;
+}
+.form-check-input:checked {
+    background-color: var(--beige-accent);
+    border-color: var(--beige-accent);
+}
+.btn-delete {
+    color: #9c9183;
+    transition: all 0.2s ease;
+}
+.btn-delete:hover {
+    color: #a83232;
+    background-color: #fde8e8;
+}
+.todo-list-container {
+    max-height: 320px;
+    overflow-y: auto;
+}
+.todo-list-container::-webkit-scrollbar {
+    width: 5px;
+}
+.todo-list-container::-webkit-scrollbar-thumb {
+    background: var(--beige-border);
+    border-radius: 4px;
+}
+#clear-completed {
+    color: var(--beige-accent) !important;
+}
