@@ -421,12 +421,6 @@ header {
 .education-content p {
     color: #666;
 }
-
-
-/* =========================================
-   CONTACT
-========================================= */
-
 .contact-container {
     display: grid;
 
@@ -524,12 +518,6 @@ header {
 .contact-form button:hover {
     background-color: #4f46e5;
 }
-
-
-/* =========================================
-   FOOTER
-========================================= */
-
 footer {
     background-color: #111827;
 
@@ -555,12 +543,6 @@ footer {
 
     font-size: 13px;
 }
-
-
-/* =========================================
-   RESPONSIVE DESIGN
-========================================= */
-
 @media (max-width: 900px) {
 
     .nav-links {
